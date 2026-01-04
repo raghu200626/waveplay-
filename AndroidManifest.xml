@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <application android:label="WavePlay">
+    <activity android:name=".activities.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:name=".activities.PlayerActivity"/>
+    <activity android:name=".activities.WallpaperActivity"/>
+    <service android:name=".player.MusicService" android:exported="false"/>
+  </application>
+</manifest>
